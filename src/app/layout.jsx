@@ -1,13 +1,13 @@
-import { Rubik } from "next/font/google";
+import { Poppins } from "next/font/google";
 import StyledComponentsRegistry from "./registry";
 import { Providers } from "./providers";
 
-const rubik = Rubik({ weight: ["400", "500", "700"], subsets: ["latin"] });
+const poppins = Poppins({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className={rubik.className}>
+      <body className={poppins.className}>
         <StyledComponentsRegistry>
           <Providers>{children}</Providers>
         </StyledComponentsRegistry>
