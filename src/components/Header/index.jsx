@@ -13,7 +13,7 @@ function Header() {
   return (
     <HeaderDiv>
       <Logo src="/images/branding/logo-coffe.svg" alt="logo" />
-      <CartButton>
+      <CartButton href="/">
         <CartImg src="/images/icons/shopping-cart.svg" alt="shopping cart" />
         <CartSize>2</CartSize>
       </CartButton>

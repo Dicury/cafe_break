@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import styled from "styled-components";
 
 export const HeaderDiv = styled.div`
@@ -9,7 +10,7 @@ export const HeaderDiv = styled.div`
   align-items: center;
   width: 100vw;
   height: 76px;
-  background-color: ${(props) => props.theme.colors.lightBrown};
+  background-color: ${(props) => props.theme.colors.background};
 `;
 export const Logo = styled.img`
   grid-row: 1/3;
@@ -18,7 +19,8 @@ export const Logo = styled.img`
   width: 10rem;
   height: 2rem;
 `;
-export const CartButton = styled.a`
+export const CartButton = styled(Link)`
+  text-decoration: none;
   justify-self: center;
   grid-column: 4/5;
   grid-row: 1/3;
