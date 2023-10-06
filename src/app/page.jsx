@@ -1,13 +1,13 @@
 import Banner from "@/components/Banner";
-import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
+import MaisVendidos from "@/components/MaisVendidos";
+import NosssosProdutos from "@/components/NossosProdutos";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <Banner />
-      <Navbar />
+      <MaisVendidos />
+      <NosssosProdutos />
     </>
   );
 }

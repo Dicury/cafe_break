@@ -13,7 +13,7 @@ function Navbar() {
       <NavbarLink href="/">
         <NavbarIcons src="/images/icons/shop.svg" alt="aba de produtos" />
       </NavbarLink>
-      <NavbarLink href="/">
+      <NavbarLink href="/sobreNos">
         <NavbarIcons src="/images/icons/book.svg" alt="aba sobre nós" />
       </NavbarLink>
       <NavbarLink href="/">

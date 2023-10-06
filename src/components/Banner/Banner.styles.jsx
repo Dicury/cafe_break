@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const BannerContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem 2rem 5rem 2rem;
+  padding: 2rem;
   background-color: ${(props) => props.theme.colors.background};
   gap: 1rem;
 `;
