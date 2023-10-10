@@ -19,7 +19,7 @@ function Navbar() {
       <NavbarLink href="/">
         <NavbarIcons src="/images/icons/user.svg" alt="aba usuário" />
       </NavbarLink>
-      <NavbarLink href="/">
+      <NavbarLink href="https://github.com/Dicury">
         <NavbarIcons
           src="/images/icons/github-logo.svg"
           alt="página do github de Mateus Cury"

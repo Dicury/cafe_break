@@ -20,10 +20,14 @@ export const MaisVendidosListaContainer = styled.div`
 
 export const MaisVendidosScroll = styled.div`
   display: flex;
-  gap: 0.8rem;
+  gap: 0.5rem;
 
   overflow-x: scroll;
   padding-left: 2rem;
   overscroll-behavior-inline: contain;
   white-space: nowrap;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;

@@ -10,5 +10,5 @@ export const NossosProdutosContainer = styled.div`
   display: grid;
   padding: 1rem;
   grid-template-columns: auto auto;
-  gap: 0.8rem;
+  gap: 0.5rem;
 `;
