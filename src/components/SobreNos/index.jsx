@@ -1,26 +1,26 @@
 "use client";
 import React from "react";
 import {
-  SobreNosBanner,
-  SobreNosBannerContainer,
-  SobreNosBannerFundo,
-  SobreNosContainerTexto,
-  SobreNosTexto,
-  SobreNosTitulo,
+  Banner,
+  BannerContainer,
+  BannerFundo,
+  ContainerTexto,
+  Texto,
+  Titulo,
 } from "@/components/SobreNos/SobreNos.styles";
 
 function SobreNos() {
   return (
     <>
-      <SobreNosBannerContainer>
-        <SobreNosBannerFundo>
-          <SobreNosBanner src="/images/banner-sobreNos.jpg" />
-        </SobreNosBannerFundo>
-      </SobreNosBannerContainer>
+      <BannerContainer>
+        <BannerFundo>
+          <Banner src="/images/banner-sobreNos.jpg" />
+        </BannerFundo>
+      </BannerContainer>
 
-      <SobreNosContainerTexto>
-        <SobreNosTitulo>Uma história de amor....por café</SobreNosTitulo>
-        <SobreNosTexto>
+      <ContainerTexto>
+        <Titulo>Uma história de amor....por café</Titulo>
+        <Texto>
           Há muitos anos, no coração da cidade de Campinas, surgiu uma pequena e
           charmosa cafeteria chamada Cafe Street. A história deste café é uma
           jornada de paixão pelo café e pela comunidade que continua a encantar
@@ -60,8 +60,8 @@ function SobreNos() {
           à qualidade e amor pela comunidade. Esperamos continuar servindo café
           delicioso e criando momentos memoráveis para todos que nos visitam por
           muitos anos vindouros.
-        </SobreNosTexto>
-      </SobreNosContainerTexto>
+        </Texto>
+      </ContainerTexto>
     </>
   );
 }

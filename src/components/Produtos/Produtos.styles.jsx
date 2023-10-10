@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-export const ProdutosContainerFundo = styled.div`
+export const ContainerFundo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@ export const ProdutosContainerFundo = styled.div`
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
 `;
 
-export const ProdutosContainer = styled.div`
+export const Container = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ export const ProdutosContainer = styled.div`
   border-radius: 10px;
   padding: 0.5rem;
 `;
-export const ProdutosAvaliacaoContainer = styled.div`
+export const AvaliacaoContainer = styled.div`
   position: absolute;
   top: 15px;
   left: 15px;
@@ -38,36 +38,36 @@ export const ProdutosAvaliacaoContainer = styled.div`
   border-radius: 5px;
   gap: 4px;
 `;
-export const ProdutosAvaliacao = styled.p`
+export const Avaliacao = styled.p`
   font-size: 12px;
   font-weight: 700;
   color: ${(props) => props.theme.colors.darkBrown};
 `;
-export const ProdutosAvaliacaoImg = styled.img``;
+export const AvaliacaoImg = styled.img``;
 
-export const ProdutosImg = styled.img`
+export const Img = styled.img`
   align-self: center;
   width: 135px;
   height: 100px;
 `;
-export const ProdutosTitulo = styled.h5`
+export const Titulo = styled.h5`
   margin-top: 10px;
   font-size: 13px;
   font-weight: 700;
   color: ${(props) => props.theme.colors.darkBrown};
 `;
 
-export const ProdutosPrecoContainer = styled.div`
+export const PrecoContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 
-export const ProdutosPreco = styled.p`
+export const Preco = styled.p`
   font-size: 12px;
   font-weight: 500;
   color: ${(props) => props.theme.colors.darkBrown};
 `;
-export const BannerButtonContainer = styled.div`
+export const BannerBotaoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,6 +76,6 @@ export const BannerButtonContainer = styled.div`
   height: 22px;
   border-radius: 100px;
 `;
-export const BannerButtonIcon = styled.img`
+export const BannerBotaoIcone = styled.img`
   width: 15px;
 `;

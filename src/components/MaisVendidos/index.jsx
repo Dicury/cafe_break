@@ -3,25 +3,25 @@
 import React from "react";
 import Produtos from "../Produtos";
 import {
-  MaisVendidosContainer,
-  MaisVendidosListaContainer,
-  MaisVendidosScroll,
-  MaisVendidosTexto,
+  Container,
+  ListaContainer,
+  Scroll,
+  Texto,
 } from "@/components/MaisVendidos/MaisVendidos.styles";
 
 function MaisVendidos() {
   return (
-    <MaisVendidosContainer>
-      <MaisVendidosTexto>Os mais vendidos</MaisVendidosTexto>
-      <MaisVendidosListaContainer>
-        <MaisVendidosScroll>
+    <Container>
+      <Texto>Os mais vendidos</Texto>
+      <ListaContainer>
+        <Scroll>
           <Produtos />
           <Produtos />
           <Produtos />
           <Produtos />
-        </MaisVendidosScroll>
-      </MaisVendidosListaContainer>
-    </MaisVendidosContainer>
+        </Scroll>
+      </ListaContainer>
+    </Container>
   );
 }
 

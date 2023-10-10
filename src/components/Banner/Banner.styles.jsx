@@ -2,33 +2,33 @@
 
 import styled from "styled-components";
 
-export const BannerContainer = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2rem;
   background-color: ${(props) => props.theme.colors.background};
   gap: 1rem;
 `;
-export const BannerTitulo = styled.h3`
+export const Titulo = styled.h3`
   color: ${(props) => props.theme.colors.darkBrown};
   font-weight: 600;
   font-size: 20px;
 `;
-export const BannerTituloDestaque = styled.span`
+export const TituloDestaque = styled.span`
   color: ${(props) => props.theme.colors.orange};
   font-weight: 600;
   font-size: 20px;
 `;
-export const BannerTexto = styled.p`
+export const Texto = styled.p`
   font-size: 14px;
   font-weight: 400;
 `;
-export const BannerImg = styled.img`
+export const Img = styled.img`
   align-self: center;
   width: 200px;
   height: 180px;
 `;
-export const BannerButton = styled.button`
+export const Botao = styled.button`
   display: flex;
   align-self: center;
   background-color: ${(props) => props.theme.colors.darkBrown};
@@ -41,7 +41,7 @@ export const BannerButton = styled.button`
   align-items: center;
   gap: 10px;
 `;
-export const BannerButtonContainer = styled.div`
+export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,6 +50,6 @@ export const BannerButtonContainer = styled.div`
   height: 22px;
   border-radius: 100px;
 `;
-export const BannerButtonIcon = styled.img`
+export const ButtonIcon = styled.img`
   width: 15px;
 `;

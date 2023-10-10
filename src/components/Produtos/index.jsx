@@ -2,37 +2,37 @@
 
 import React from "react";
 import {
-  BannerButtonContainer,
-  BannerButtonIcon,
-  ProdutosAvaliacao,
-  ProdutosAvaliacaoContainer,
-  ProdutosAvaliacaoImg,
-  ProdutosContainer,
-  ProdutosContainerFundo,
-  ProdutosImg,
-  ProdutosPreco,
-  ProdutosPrecoContainer,
-  ProdutosTitulo,
+  BannerBotaoContainer,
+  BannerBotaoIcone,
+  Avaliacao,
+  AvaliacaoContainer,
+  AvaliacaoImg,
+  Container,
+  ContainerFundo,
+  Img,
+  Preco,
+  PrecoContainer,
+  Titulo,
 } from "@/components/Produtos/Produtos.styles";
 
 function Produtos() {
   return (
-    <ProdutosContainerFundo>
-      <ProdutosContainer>
-        <ProdutosAvaliacaoContainer>
-          <ProdutosAvaliacao>4.8</ProdutosAvaliacao>
-          <ProdutosAvaliacaoImg src="/images/icons/star-icon.svg" />
-        </ProdutosAvaliacaoContainer>
-        <ProdutosImg src="/images/products/cha-matte.svg" />
-        <ProdutosTitulo>Chá Matte</ProdutosTitulo>
-        <ProdutosPrecoContainer>
-          <ProdutosPreco>R$: 6,00</ProdutosPreco>
-          <BannerButtonContainer>
-            <BannerButtonIcon src="/images/icons/shopping-cart-white.svg" />
-          </BannerButtonContainer>
-        </ProdutosPrecoContainer>
-      </ProdutosContainer>
-    </ProdutosContainerFundo>
+    <ContainerFundo>
+      <Container>
+        <AvaliacaoContainer>
+          <Avaliacao>4.8</Avaliacao>
+          <AvaliacaoImg src="/images/icons/star-icon.svg" />
+        </AvaliacaoContainer>
+        <Img src="/images/products/cha-matte.svg" />
+        <Titulo>Chá Matte</Titulo>
+        <PrecoContainer>
+          <Preco>R$: 6,00</Preco>
+          <BannerBotaoContainer>
+            <BannerBotaoIcone src="/images/icons/shopping-cart-white.svg" />
+          </BannerBotaoContainer>
+        </PrecoContainer>
+      </Container>
+    </ContainerFundo>
   );
 }
 

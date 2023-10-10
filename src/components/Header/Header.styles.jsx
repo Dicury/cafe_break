@@ -19,7 +19,7 @@ export const Logo = styled.img`
   width: 10rem;
   height: 2rem;
 `;
-export const CartButton = styled(Link)`
+export const CarrinhoBotao = styled(Link)`
   text-decoration: none;
   justify-self: center;
   grid-column: 4/5;
@@ -29,8 +29,8 @@ export const CartButton = styled(Link)`
   border: none;
   background: none;
 `;
-export const CartImg = styled.img``;
-export const CartSize = styled.div`
+export const CarrinhoImg = styled.img``;
+export const CarrinhoTamanho = styled.div`
   position: relative;
   text-align: center;
   bottom: 35px;

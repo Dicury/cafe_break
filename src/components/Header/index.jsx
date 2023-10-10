@@ -2,9 +2,9 @@
 
 import React from "react";
 import {
-  CartButton,
-  CartImg,
-  CartSize,
+  CarrinhoBotao,
+  CarrinhoImg,
+  CarrinhoTamanho,
   HeaderDiv,
   Logo,
 } from "@/components/Header/Header.styles";
@@ -13,10 +13,13 @@ function Header() {
   return (
     <HeaderDiv>
       <Logo src="/images/branding/logo-coffe.svg" alt="logo" />
-      <CartButton href="/carrinho">
-        <CartImg src="/images/icons/shopping-cart.svg" alt="shopping cart" />
-        <CartSize>2</CartSize>
-      </CartButton>
+      <CarrinhoBotao href="/carrinho">
+        <CarrinhoImg
+          src="/images/icons/shopping-cart.svg"
+          alt="shopping cart"
+        />
+        <CarrinhoTamanho>2</CarrinhoTamanho>
+      </CarrinhoBotao>
     </HeaderDiv>
   );
 }
