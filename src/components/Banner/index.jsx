@@ -5,7 +5,8 @@ import {
   Botao,
   ButtonContainer,
   ButtonIcon,
-  Container,
+  ContainerExterno,
+  ContainerInterno,
   Img,
   Texto,
   Titulo,
@@ -14,20 +15,25 @@ import {
 
 function Banner() {
   return (
-    <Container>
-      <Titulo>
-        O favorito de todos vai deixar seu dia
-        <TituloDestaque> ainda melhor.</TituloDestaque>
-      </Titulo>
-      <Texto>Aumente sua produtividade com nosso incrível cappucino.</Texto>
-      <Img src="/images/banner-cappucino.svg" />
+    <ContainerExterno>
+      <ContainerInterno>
+        <Titulo>
+          O favorito de todos vai deixar seu dia
+          <TituloDestaque> ainda melhor.</TituloDestaque>
+        </Titulo>
+        <Texto>
+          Aumente sua produtividade com nosso incrível cappucino, o produto mais
+          famoso e vendido de nossa loja.
+        </Texto>
+      </ContainerInterno>
       <Botao>
         Pedir agora
         <ButtonContainer>
           <ButtonIcon src="/images/icons/shopping-cart-white.svg" />
         </ButtonContainer>
       </Botao>
-    </Container>
+      <Img src="/images/banner-cappucino.svg" />
+    </ContainerExterno>
   );
 }
 

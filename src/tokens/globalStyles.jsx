@@ -11,7 +11,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.lightGrey};
 }
 
 button, 
@@ -21,7 +21,7 @@ textarea {
 }
 
 p {
-  color: ${(props) => props.theme.colors.gray};
+  color: ${(props) => props.theme.colors.grey};
   line-height: 1.5rem;
 }
 `;

@@ -24,6 +24,12 @@ export const Container = styled.div`
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 10px;
   padding: 0.5rem;
+
+  @media (min-width: 1000px) {
+    width: 350px;
+    height: 360px;
+    padding: 1rem;
+  }
 `;
 export const AvaliacaoContainer = styled.div`
   position: absolute;
@@ -37,6 +43,11 @@ export const AvaliacaoContainer = styled.div`
   padding: 1px;
   border-radius: 5px;
   gap: 4px;
+
+  @media (min-width: 1000px) {
+    top: 40px;
+    left: 25px;
+  }
 `;
 export const Avaliacao = styled.p`
   font-size: 12px;
@@ -49,12 +60,21 @@ export const Img = styled.img`
   align-self: center;
   width: 135px;
   height: 100px;
+
+  @media (min-width: 1000px) {
+    width: 320px;
+    height: 310px;
+  }
 `;
 export const Titulo = styled.h5`
   margin-top: 10px;
   font-size: 13px;
   font-weight: 700;
   color: ${(props) => props.theme.colors.darkBrown};
+
+  @media (min-width: 1000px) {
+    font-size: 24px;
+  }
 `;
 
 export const PrecoContainer = styled.div`
@@ -66,6 +86,12 @@ export const Preco = styled.p`
   font-size: 12px;
   font-weight: 500;
   color: ${(props) => props.theme.colors.darkBrown};
+
+  @media (min-width: 1000px) {
+    font-size: 20px;
+    align-self: center;
+    font-weight: 600;
+  }
 `;
 export const BannerBotaoContainer = styled.div`
   display: flex;
@@ -75,7 +101,16 @@ export const BannerBotaoContainer = styled.div`
   width: 22px;
   height: 22px;
   border-radius: 100px;
+
+  @media (min-width: 1000px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 export const BannerBotaoIcone = styled.img`
   width: 15px;
+
+  @media (min-width: 1000px) {
+    width: 20px;
+  }
 `;

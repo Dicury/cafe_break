@@ -2,7 +2,7 @@ import { Poppins } from "next/font/google";
 import StyledComponentsRegistry from "./registry";
 import { Providers } from "./providers";
 import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
           <Providers>
             <Header />
             {children}
-            <Navbar />
+            <Footer />
           </Providers>
         </StyledComponentsRegistry>
       </body>

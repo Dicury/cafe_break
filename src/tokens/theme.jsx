@@ -4,7 +4,8 @@ export const theme = {
     darkBrown: "#2F2105",
     lightBrown: "#F9D9AA",
     background: "#F6EBDA",
-    gray: "#7E7D7A",
+    grey: "#7E7D7A",
+    lightGrey: "#f8f7f5",
     white: "hsl(0, 0%, 100%)",
   },
 
