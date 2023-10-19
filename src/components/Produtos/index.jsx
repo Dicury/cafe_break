@@ -15,18 +15,18 @@ import {
   Titulo,
 } from "@/components/Produtos/Produtos.styles";
 
-function Produtos() {
+function Produtos({ avaliacao, nome, img, preco }) {
   return (
     <ContainerFundo>
       <Container>
         <AvaliacaoContainer>
-          <Avaliacao>4.8</Avaliacao>
+          <Avaliacao>{avaliacao}</Avaliacao>
           <AvaliacaoImg src="/images/icons/star-icon.svg" />
         </AvaliacaoContainer>
-        <Img src="/images/products/cha-matte.svg" />
-        <Titulo>Chá Matte</Titulo>
+        <Img src={img} />
+        <Titulo>{nome}</Titulo>
         <PrecoContainer>
-          <Preco>R$: 6,00</Preco>
+          <Preco>R$: {preco},00</Preco>
           <BannerBotaoContainer>
             <BannerBotaoIcone src="/images/icons/shopping-cart-white.svg" />
           </BannerBotaoContainer>

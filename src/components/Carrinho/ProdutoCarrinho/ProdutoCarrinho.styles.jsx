@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr 2fr auto;
+  grid-template-columns: auto auto 2fr 2fr;
   grid-template-rows: repeat(3, 1fr);
   margin: 2rem;
+  border-bottom: solid 1px ${(props) => props.theme.colors.orange};
+  padding-bottom: 1rem;
+  gap: 1rem;
   @media (min-width: 600px) {
-    grid-template-columns: auto auto 2fr 2fr;
-    gap: 1rem;
   }
 `;
 export const DeletarBotao = styled.button`
@@ -25,6 +26,8 @@ export const ImagemProduto = styled.img`
   grid-column: 2/3;
   grid-row: 1/4;
   @media (min-width: 600px) {
+    width: 110px;
+    height: 110px;
   }
 
   @media (min-width: 1000px) {
@@ -40,9 +43,6 @@ export const TextoContainer = styled.div`
   @media (min-width: 600px) {
     gap: 1rem;
   }
-
-  @media (min-width: 1000px) {
-  }
 `;
 export const Texto = styled.p`
   font-size: 14px;
@@ -56,18 +56,10 @@ export const Texto = styled.p`
 export const BotaoContainerExterno = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-self: end;
   gap: 0.5rem;
   grid-column: 4/5;
-  grid-row: 3/4;
-
-  @media (min-width: 600px) {
-    grid-row: 1/2;
-    justify-self: end;
-  }
-
-  @media (min-width: 1000px) {
-  }
+  grid-row: 1/2;
 `;
 export const BotaoContainerInterno = styled.button`
   border: none;

@@ -2,20 +2,16 @@ import Link from "next/link";
 import styled from "styled-components";
 
 export const ContainerExterno = styled.div`
+  padding: 5vh 10vw;
   @media (min-width: 600px) {
-    padding: 5vh 10vw;
-  }
-
-  @media (min-width: 1000px) {
   }
 `;
 
 export const TituloContainer = styled.div`
   display: flex;
-  padding-top: 2rem;
   padding-bottom: 1rem;
-  justify-content: space-between;
   border-bottom: solid 2px ${(props) => props.theme.colors.orange};
+  justify-content: space-between;
 `;
 
 export const InfosContainer = styled.section`
@@ -26,9 +22,6 @@ export const InfosContainer = styled.section`
 
   @media (min-width: 600px) {
     align-items: end;
-  }
-
-  @media (min-width: 1000px) {
   }
 `;
 

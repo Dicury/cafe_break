@@ -45,7 +45,7 @@ export const AvaliacaoContainer = styled.div`
   gap: 4px;
 
   @media (min-width: 1000px) {
-    top: 40px;
+    top: 30px;
     left: 25px;
   }
 `;
