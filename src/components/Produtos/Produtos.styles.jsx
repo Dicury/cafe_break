@@ -93,24 +93,3 @@ export const Preco = styled.p`
     font-weight: 600;
   }
 `;
-export const BannerBotaoContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: ${(props) => props.theme.colors.orange};
-  width: 22px;
-  height: 22px;
-  border-radius: 100px;
-
-  @media (min-width: 1000px) {
-    width: 40px;
-    height: 40px;
-  }
-`;
-export const BannerBotaoIcone = styled.img`
-  width: 15px;
-
-  @media (min-width: 1000px) {
-    width: 20px;
-  }
-`;

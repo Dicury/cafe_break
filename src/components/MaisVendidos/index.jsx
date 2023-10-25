@@ -12,18 +12,18 @@ import {
 import compararNumeroLista from "@/utils/compararNumeroLista";
 
 function MaisVendidos() {
-  const OrganizaLista = ListaProdutos.produtos
-    .map((produto) => produto.vendas)
+  const OrganizaLista = ListaProdutos.map((produto) => produto.vendas)
     .sort((a, b) => b - a)
     .splice(0, 4);
 
-  const maisVendidos = ListaProdutos.produtos.map((produto) => {
+  const maisVendidos = ListaProdutos.map((produto) => {
     if (compararNumeroLista(produto.vendas, OrganizaLista)) {
       return (
         <Produtos
+          id={produto.id}
           key={produto.id}
           avaliacao={produto.avaliacao}
-          img={produto.imagem}
+          imagem={produto.imagem}
           nome={produto.nome}
           preco={produto.preco}
         />

@@ -7,18 +7,24 @@ import {
   CarrinhoTamanho,
   HeaderDiv,
   Logo,
+  LogoLink,
   ContainerPaginas,
   Icone,
   IconeUsuario,
   Links,
   Texto,
 } from "@/components/Header/Header.styles";
+import useCarrinhoContext from "@/hooks/useCarrinhoContext";
 
 function Header() {
+  const { carrinho, setCarrinho } = useCarrinhoContext();
+
   return (
     <>
       <HeaderDiv>
-        <Logo src="/images/branding/logo-coffe.svg" alt="logo" />
+        <LogoLink href="/">
+          <Logo src="/images/branding/logo-coffe.svg" alt="logo" />
+        </LogoLink>
 
         <ContainerPaginas>
           <Links href="/">
@@ -45,7 +51,7 @@ function Header() {
             src="/images/icons/shopping-cart.svg"
             alt="shopping cart"
           />
-          <CarrinhoTamanho>2</CarrinhoTamanho>
+          <CarrinhoTamanho>{carrinho.length}</CarrinhoTamanho>
         </CarrinhoBotao>
       </HeaderDiv>
     </>

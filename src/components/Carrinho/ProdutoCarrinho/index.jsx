@@ -1,4 +1,5 @@
 import React from "react";
+import useCarrinhoContext from "@/hooks/useCarrinhoContext";
 import {
   Botao,
   BotaoContainerExterno,
@@ -11,23 +12,25 @@ import {
   TextoContainer,
 } from "@/components/Carrinho/ProdutoCarrinho/ProdutoCarrinho.styles";
 
-function ProdutoCarrinho() {
+function ProdutoCarrinho({ nome, preco, quantidade, imagem, id }) {
+  const { removerDoCarrinho, mudarQuantidade } = useCarrinhoContext();
+
   return (
     <Container>
-      <DeletarBotao>
+      <DeletarBotao onClick={() => removerDoCarrinho(id)}>
         <DeletarImagem src="/images/icons/delete.svg" />
       </DeletarBotao>
-      <ImagemProduto src="/images/products/cappucino.svg" />
+      <ImagemProduto src={imagem} />
       <TextoContainer>
-        <Texto>Cappucino</Texto>
-        <Texto>R$: 18,00</Texto>
+        <Texto>{nome}</Texto>
+        <Texto>R$: {preco},00</Texto>
       </TextoContainer>
       <BotaoContainerExterno>
-        <BotaoContainerInterno>
+        <BotaoContainerInterno onClick={() => mudarQuantidade(id, "adicionar")}>
           <Botao src="/images/icons/add.svg" />
         </BotaoContainerInterno>
-        <Texto>2</Texto>
-        <BotaoContainerInterno>
+        <Texto>{quantidade}</Texto>
+        <BotaoContainerInterno onClick={() => mudarQuantidade(id, "subtrair")}>
           <Botao src="/images/icons/subtract.svg" />
         </BotaoContainerInterno>
       </BotaoContainerExterno>

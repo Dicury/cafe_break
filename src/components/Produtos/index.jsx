@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import useCarrinhoContext from "@/hooks/useCarrinhoContext";
+import Modal from "../BotaoCompra";
 import {
   BannerBotaoContainer,
   BannerBotaoIcone,
@@ -14,8 +16,9 @@ import {
   PrecoContainer,
   Titulo,
 } from "@/components/Produtos/Produtos.styles";
+import BotaoCompra from "../BotaoCompra";
 
-function Produtos({ avaliacao, nome, img, preco }) {
+function Produtos({ avaliacao, nome, imagem, preco, id }) {
   return (
     <ContainerFundo>
       <Container>
@@ -23,13 +26,17 @@ function Produtos({ avaliacao, nome, img, preco }) {
           <Avaliacao>{avaliacao}</Avaliacao>
           <AvaliacaoImg src="/images/icons/star-icon.svg" />
         </AvaliacaoContainer>
-        <Img src={img} />
+        <Img src={imagem} />
         <Titulo>{nome}</Titulo>
         <PrecoContainer>
           <Preco>R$: {preco},00</Preco>
-          <BannerBotaoContainer>
-            <BannerBotaoIcone src="/images/icons/shopping-cart-white.svg" />
-          </BannerBotaoContainer>
+          <BotaoCompra
+            nome={nome}
+            id={id}
+            imagem={imagem}
+            preco={preco}
+            key={id}
+          />
         </PrecoContainer>
       </Container>
     </ContainerFundo>

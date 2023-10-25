@@ -1,19 +1,22 @@
 "use client";
 
 import React from "react";
+import ListaProdutos from "@/api/api";
 import {
-  Botao,
-  ButtonContainer,
-  ButtonIcon,
+  ContainerBotao,
   ContainerExterno,
   ContainerInterno,
   Img,
   Texto,
+  TextoBotao,
   Titulo,
   TituloDestaque,
+  BotaoCompraEstilizado,
 } from "@/components/Banner/Banner.styles";
 
 function Banner() {
+  const produtoDivulgado = ListaProdutos[4];
+
   return (
     <ContainerExterno>
       <ContainerInterno>
@@ -26,12 +29,17 @@ function Banner() {
           famoso e vendido de nossa loja.
         </Texto>
       </ContainerInterno>
-      <Botao>
-        Pedir agora
-        <ButtonContainer>
-          <ButtonIcon src="/images/icons/shopping-cart-white.svg" />
-        </ButtonContainer>
-      </Botao>
+      <ContainerBotao>
+        <TextoBotao>Pedir Agora</TextoBotao>
+        <BotaoCompraEstilizado
+          className="Botao"
+          nome={produtoDivulgado.nome}
+          id={produtoDivulgado.id}
+          imagem={produtoDivulgado.imagem}
+          preco={produtoDivulgado.preco}
+          key={produtoDivulgado.id}
+        />
+      </ContainerBotao>
       <Img src="/images/banner-cappucino.svg" />
     </ContainerExterno>
   );

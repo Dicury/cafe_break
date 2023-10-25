@@ -20,18 +20,23 @@ export const HeaderDiv = styled.div`
   @media (min-width: 1000px) {
   }
 `;
-export const Logo = styled.img`
+
+export const LogoLink = styled(Link)`
   grid-row: 1/3;
   grid-column: 1/5;
   justify-self: center;
-  width: 10rem;
-  height: 2rem;
+  text-decoration: none;
 
   @media (min-width: 600px) {
     grid-row: 1/3;
     grid-column: 1/2;
     justify-self: left;
   }
+`;
+
+export const Logo = styled.img`
+  width: 10rem;
+  height: 2rem;
 `;
 export const CarrinhoBotao = styled(Link)`
   text-decoration: none;

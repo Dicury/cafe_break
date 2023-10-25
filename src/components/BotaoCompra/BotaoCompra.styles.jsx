@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { styled } from "styled-components";
 
 export const Fundo = styled.div`
@@ -33,7 +34,9 @@ export const Titulo = styled.div`
   color: ${(props) => props.theme.colors.darkBrown};
 `;
 
-export const Texto = styled.p``;
+export const Texto = styled.p`
+  white-space: pre-line;
+`;
 
 export const ContainerBotoes = styled.div`
   display: flex;
@@ -43,8 +46,9 @@ export const ContainerBotoes = styled.div`
   align-items: center;
 `;
 
-export const BotaoAdicionar = styled.button`
+export const BotaoAdicionar = styled(Link)`
   background-color: ${(props) => props.theme.colors.orange};
+  text-decoration: none;
   color: ${(props) => props.theme.colors.white};
   border: none;
   padding: 0.9rem 1.2rem;
@@ -61,4 +65,22 @@ export const BotaoCancelar = styled.button`
   border-radius: 10px;
   font-weight: 500;
   font-size: 1rem;
+`;
+
+export const BotaoCompraContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${(props) => props.theme.colors.orange};
+  width: auto;
+  height: auto;
+  border-radius: 100px;
+  padding: 0.5rem;
+`;
+export const BotaoCompraIcone = styled.img`
+  width: 15px;
+
+  @media (min-width: 1000px) {
+    width: 25px;
+  }
 `;

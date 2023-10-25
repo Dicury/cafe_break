@@ -1,6 +1,7 @@
 "use client";
 
 import styled from "styled-components";
+import BotaoCompra from "../BotaoCompra";
 
 export const ContainerExterno = styled.div`
   display: grid;
@@ -98,14 +99,13 @@ export const Img = styled.img`
     height: 400px;
   }
 `;
-export const Botao = styled.button`
+export const ContainerBotao = styled.div`
   grid-row: 3/4;
   display: flex;
   justify-self: center;
   background-color: ${(props) => props.theme.colors.darkBrown};
   color: ${(props) => props.theme.colors.white};
-  border: none;
-  width: 200px;
+  width: 210px;
   border-radius: 33px;
   padding: 12px 32px;
   justify-content: center;
@@ -120,18 +120,18 @@ export const Botao = styled.button`
 
   @media (min-width: 1000px) {
     margin-bottom: 2rem;
-    font-size: 14px;
   }
 `;
-export const ButtonContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: ${(props) => props.theme.colors.orange};
-  width: 22px;
-  height: 22px;
-  border-radius: 100px;
+
+export const TextoBotao = styled.p`
+  color: ${(props) => props.theme.colors.white};
 `;
-export const ButtonIcon = styled.img`
-  width: 15px;
+
+export const BotaoCompraEstilizado = styled(BotaoCompra)`
+  @media (min-width: 1000px) {
+    width: 35px;
+    > img {
+      width: 20px;
+    }
+  }
 `;

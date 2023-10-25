@@ -37,7 +37,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Teste = styled.div`
+export const ContainerProduto = styled.div`
   flex-basis: 30%;
   @media (min-width: 1000px) {
     flex-basis: 20%;
