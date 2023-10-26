@@ -1,5 +1,8 @@
 "use client";
 
+import Colors from "@/tokens/colors";
+import FontSize from "@/tokens/fontSize";
+import Spacings from "@/tokens/spacings";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -9,11 +12,11 @@ export const HeaderDiv = styled.div`
   align-items: center;
   width: 100vw;
   height: 10vh;
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${Colors.FUNDO};
 
   @media (min-width: 600px) {
     grid-template-columns: auto auto 50px;
-    padding: 2vw 10vw;
+    padding: ${Spacings.PADDING_VW_S} ${Spacings.PADDING_VW_L};
     align-items: center;
   }
 
@@ -63,10 +66,10 @@ export const CarrinhoTamanho = styled.div`
   width: 20px;
   z-index: 1000;
   border-radius: 100px;
-  border: 1px solid ${(props) => props.theme.colors.white};
-  color: ${(props) => props.theme.colors.white};
-  font-size: 12px;
-  background-color: ${(props) => props.theme.colors.orange};
+  border: 1px solid ${Colors.BRANCO};
+  color: ${Colors.BRANCO};
+  font-size: ${FontSize.CORPO_S};
+  background-color: ${Colors.PRIMARIA};
 `;
 
 export const ContainerPaginas = styled.div`
@@ -76,12 +79,12 @@ export const ContainerPaginas = styled.div`
   left: 0;
   right: 0;
   z-index: 5;
-  gap: 1rem;
+  gap: ${Spacings.GAP_S};
   margin-left: 10%;
   align-items: baseline;
   justify-content: center;
-  background-color: ${(props) => props.theme.colors.darkBrown};
-  padding: 0.5rem 1rem;
+  background-color: ${Colors.SECUNDARIA};
+  padding: ${Spacings.PADDING_VS} ${Spacings.PADDING_S};
   border-radius: 20px 20px 0 0;
   width: 80vw;
 
@@ -96,11 +99,11 @@ export const ContainerPaginas = styled.div`
     width: auto;
     border-radius: 0px;
     padding: 0px;
-    gap: 1rem;
+    gap: ${Spacings.GAP_S};
   }
 
   @media (min-width: 1000px) {
-    gap: 2rem;
+    gap: ${Spacings.GAP_M};
   }
 `;
 export const Links = styled(Link)`
@@ -131,8 +134,8 @@ export const Texto = styled.p`
   display: none;
   @media (min-width: 600px) {
     display: block;
-    color: ${(props) => props.theme.colors.orange};
-    font-size: 16px;
+    color: ${Colors.PRIMARIA};
+    font-size: ${FontSize.CORPO_L};
     font-weight: 400;
   }
 `;

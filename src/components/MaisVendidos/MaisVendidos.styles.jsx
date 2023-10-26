@@ -1,39 +1,36 @@
 "use client";
+import Colors from "@/tokens/colors";
+import FontSize from "@/tokens/fontSize";
+import Spacings from "@/tokens/spacings";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${Colors.FUNDO};
   position: relative;
-
-  @media (min-width: 600px) {
-  }
-
-  @media (min-width: 1000px) {
-  }
 `;
 export const Texto = styled.h4`
-  padding: 0 0 1rem 2rem;
-  color: ${(props) => props.theme.colors.darkBrown};
+  padding: 0 0 ${Spacings.PADDING_S} ${Spacings.PADDING_M};
+  color: ${Colors.SECUNDARIA};
 
   @media (min-width: 600px) {
-    padding-left: 3rem;
-    font-size: 24px;
+    padding-left: ${Spacings.PADDING_M};
+    font-size: ${FontSize.TITULO_M};
   }
 
   @media (min-width: 1000px) {
-    font-size: 32px;
-    padding-left: 10vw;
-    padding-bottom: 2rem;
+    font-size: ${FontSize.TITULO_L};
+    padding-left: ${Spacings.PADDING_VW_L};
+    padding-bottom: ${Spacings.PADDING_M};
   }
 `;
 export const ListaContainer = styled.div`
   display: flex;
   align-items: center;
-  padding: 1rem 0 1rem 0;
-  background-color: ${(props) => props.theme.colors.lightBrown};
+  padding: ${Spacings.PADDING_S} 0 ${Spacings.PADDING_S} 0;
+  background-color: ${Colors.FUNDO_DESTAQUE};
 
   @media (min-width: 600px) {
-    padding-left: 1rem;
+    padding-left: ${Spacings.PADDING_S};
   }
 
   @media (min-width: 1000px) {
@@ -44,10 +41,10 @@ export const ListaContainer = styled.div`
 
 export const Scroll = styled.div`
   display: flex;
-  gap: 0.5rem;
+  gap: ${Spacings.GAP_VS};
 
   overflow-x: scroll;
-  padding-left: 2rem;
+  padding-left: ${Spacings.PADDING_M};
   overscroll-behavior-inline: contain;
   white-space: nowrap;
 
@@ -57,6 +54,6 @@ export const Scroll = styled.div`
 
   @media (min-width: 1000px) {
     padding-left: 0;
-    gap: 1.5rem;
+    gap: ${Spacings.GAP_S};
   }
 `;

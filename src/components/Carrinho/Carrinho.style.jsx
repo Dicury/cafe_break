@@ -1,16 +1,19 @@
+import Colors from "@/tokens/colors";
+import FontSize from "@/tokens/fontSize";
+import Spacings from "@/tokens/spacings";
 import Link from "next/link";
 import styled from "styled-components";
 
 export const ContainerExterno = styled.div`
-  padding: 5vh 10vw;
+  padding: ${Spacings.PADDING_VH_M} ${Spacings.PADDING_VW_L};
   @media (min-width: 600px) {
   }
 `;
 
 export const TituloContainer = styled.div`
   display: flex;
-  padding-bottom: 1rem;
-  border-bottom: solid 2px ${(props) => props.theme.colors.orange};
+  padding-bottom: ${Spacings.PADDING_S};
+  border-bottom: solid 2px ${Colors.PRIMARIA};
   justify-content: space-between;
 `;
 
@@ -36,12 +39,12 @@ export const InfosContainerInterno = styled.section`
 `;
 
 export const Texto = styled.h3`
-  color: ${(props) => props.theme.colors.darkBrown};
-  font-size: 20px;
+  color: ${Colors.SECUNDARIA};
+  font-size: ${FontSize.TITULO_S};
   font-weight: 700;
 
   @media (min-width: 600px) {
-    font-size: 32px;
+    font-size: ${FontSize.TITULO_M};
   }
 `;
 
@@ -59,24 +62,18 @@ export const PrecoContainer = styled.div`
   }
 `;
 export const PrecoTexto = styled.p`
-  color: ${(props) => props.theme.colors.darkBrown};
+  color: ${Colors.SECUNDARIA};
   text-align: left;
-  font-size: 14px;
+  font-size: ${FontSize.CORPO_M};
   font-weight: 500;
 
   @media (min-width: 600px) {
-    font-size: 18px;
+    font-size: ${FontSize.CORPO_H};
   }
 `;
 
-export const PrecoTextoTotal = styled.p`
-  color: ${(props) => props.theme.colors.darkBrown};
-  font-size: 14px;
+export const PrecoTextoTotal = styled(PrecoTexto)`
   font-weight: 700;
-
-  @media (min-width: 600px) {
-    font-size: 18px;
-  }
 `;
 
 export const BotaoContainer = styled.div`
@@ -94,8 +91,8 @@ export const Botao = styled.button`
   justify-content: center;
   align-items: center;
   border-radius: 33px;
-  background: ${(props) => props.theme.colors.darkBrown};
-  color: ${(props) => props.theme.colors.white};
+  background: ${Colors.SECUNDARIA};
+  color: ${Colors.BRANCO};
   border: none;
   font-size: 16px;
   font-weight: 600;
@@ -104,13 +101,13 @@ export const ContainerLink = styled.div`
   display: none;
   @media (min-width: 600px) {
     display: flex;
-    gap: 1rem;
+    gap: ${Spacings.GAP_S};
     align-self: flex-start;
   }
 `;
 export const Voltar = styled(Link)`
-  color: ${(props) => props.theme.colors.orange};
-  font-size: 16px;
+  color: ${Colors.PRIMARIA};
+  font-size: ${FontSize.CORPO_L};
   font-weight: 500;
   text-decoration: none;
 `;

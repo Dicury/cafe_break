@@ -1,19 +1,22 @@
 "use client";
 
+import Colors from "@/tokens/colors";
+import FontSize from "@/tokens/fontSize";
+import Spacings from "@/tokens/spacings";
 import styled from "styled-components";
 
 export const Titulo = styled.h4`
-  padding: 1rem 0 1rem 2rem;
-  color: ${(props) => props.theme.colors.darkBrown};
+  padding: ${Spacings.PADDING_S} 0 ${Spacings.PADDING_S} ${Spacings.PADDING_M};
+  color: ${Colors.SECUNDARIA};
 
   @media (min-width: 600px) {
-    padding: 2rem 0 0 3rem;
-    font-size: 24px;
+    padding: ${Spacings.PADDING_M} 0 0 ${Spacings.PADDING_L};
+    font-size: ${FontSize.TITULO_M};
   }
 
   @media (min-width: 1000px) {
-    font-size: 32px;
-    padding-left: 10vw;
+    font-size: ${FontSize.TITULO_L};
+    padding-left: ${Spacings.PADDING_VW_L};
   }
 `;
 export const Container = styled.div`
@@ -21,19 +24,19 @@ export const Container = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1rem;
+  padding: ${Spacings.PADDING_S};
   grid-template-columns: auto auto;
-  gap: 0.5rem;
+  gap: ${Spacings.GAP_VS};
 
   @media (min-width: 600px) {
-    padding: 1rem;
+    padding: ${Spacings.PADDING_S};
     grid-template-columns: repeat(3, auto);
-    gap: 1rem;
+    gap: ${Spacings.GAP_S};
   }
 
   @media (min-width: 1000px) {
-    padding: 2rem;
-    gap: 1.5rem;
+    padding: ${Spacings.PADDING_M};
+    gap: ${Spacings.GAP};
   }
 `;
 

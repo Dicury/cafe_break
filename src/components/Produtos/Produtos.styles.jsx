@@ -1,5 +1,8 @@
 "use client";
 
+import Colors from "@/tokens/colors";
+import FontSize from "@/tokens/fontSize";
+import Spacings from "@/tokens/spacings";
 import styled from "styled-components";
 
 export const ContainerFundo = styled.div`
@@ -21,14 +24,14 @@ export const Container = styled.div`
   justify-content: center;
   width: 155px;
   height: 170px;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${Colors.BRANCO};
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: ${Spacings.PADDING_VS};
 
   @media (min-width: 1000px) {
     width: 350px;
     height: 360px;
-    padding: 1rem;
+    padding: ${Spacings.PADDING_S};
   }
 `;
 export const AvaliacaoContainer = styled.div`
@@ -38,7 +41,7 @@ export const AvaliacaoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${Colors.BRANCO};
   width: 50px;
   padding: 1px;
   border-radius: 5px;
@@ -50,9 +53,9 @@ export const AvaliacaoContainer = styled.div`
   }
 `;
 export const Avaliacao = styled.p`
-  font-size: 12px;
+  font-size: ${FontSize.CORPO_S};
   font-weight: 700;
-  color: ${(props) => props.theme.colors.darkBrown};
+  color: ${Colors.SECUNDARIA};
 `;
 export const AvaliacaoImg = styled.img``;
 
@@ -70,7 +73,7 @@ export const Titulo = styled.h5`
   margin-top: 10px;
   font-size: 13px;
   font-weight: 700;
-  color: ${(props) => props.theme.colors.darkBrown};
+  color: ${Colors.SECUNDARIA};
 
   @media (min-width: 1000px) {
     font-size: 24px;
@@ -83,12 +86,12 @@ export const PrecoContainer = styled.div`
 `;
 
 export const Preco = styled.p`
-  font-size: 12px;
+  font-size: ${FontSize.CORPO_S};
   font-weight: 500;
-  color: ${(props) => props.theme.colors.darkBrown};
+  color: ${Colors.SECUNDARIA};
 
   @media (min-width: 1000px) {
-    font-size: 20px;
+    font-size: ${FontSize.CORPO_VH};
     align-self: center;
     font-weight: 600;
   }

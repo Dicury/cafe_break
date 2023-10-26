@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import Colors from "./colors";
 
 export const GlobalStyles = createGlobalStyle`
 * {
@@ -11,7 +12,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: ${(props) => props.theme.colors.lightGrey};
+  background-color: ${Colors.CINZA_CLARO};
 }
 
 button, 
@@ -21,7 +22,7 @@ textarea {
 }
 
 p {
-  color: ${(props) => props.theme.colors.grey};
+  color: ${Colors.TEXTO_BASE};
   line-height: 1.5rem;
 }
 `;
