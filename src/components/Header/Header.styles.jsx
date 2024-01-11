@@ -51,6 +51,10 @@ export const CarrinhoBotao = styled(Link)`
   border: none;
   background: none;
 
+  &:hover {
+    scale: 1.05;
+  }
+
   @media (min-width: 600px) {
     grid-row: 1/3;
     grid-column: 3/4;
@@ -124,6 +128,10 @@ export const IconeUsuario = styled.img`
   width: 50px;
   height: 50px;
 
+  &:hover {
+    scale: 1.05;
+  }
+
   @media (min-width: 600px) {
     width: 34px;
     height: 34px;
@@ -132,6 +140,11 @@ export const IconeUsuario = styled.img`
 
 export const Texto = styled.p`
   display: none;
+
+  &:hover {
+    scale: 1.05;
+  }
+
   @media (min-width: 600px) {
     display: block;
     color: ${Colors.PRIMARIA};

@@ -79,6 +79,10 @@ export const BotaoCompraContainer = styled.div`
   height: auto;
   border-radius: 100px;
   padding: ${Spacings.GAP_VS};
+
+  &:hover {
+    scale: 1.05;
+  }
 `;
 export const BotaoCompraIcone = styled.img`
   width: 15px;

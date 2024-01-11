@@ -15,7 +15,7 @@ import {
   Texto,
 } from "@/components/BotaoCompra/BotaoCompra.styles";
 
-export default function BotaoCompra({ nome, id, preco, imagem, className }) {
+export default function BotaoCompra({ nome, id, preco, imagem, ...props }) {
   const { adicionarCarrinho } = useCarrinhoContext();
   const [modalAtiva, setModalAtiva] = useState(false);
 
@@ -26,7 +26,7 @@ export default function BotaoCompra({ nome, id, preco, imagem, className }) {
 
   return (
     <>
-      <BotaoCompraContainer onClick={ativarModal} className={className}>
+      <BotaoCompraContainer onClick={ativarModal} {...props}>
         <BotaoCompraIcone src="/images/icons/shopping-cart-white.svg" />
       </BotaoCompraContainer>
       {modalAtiva && (

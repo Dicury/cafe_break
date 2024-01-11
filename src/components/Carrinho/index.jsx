@@ -19,7 +19,7 @@ import {
 import useCarrinhoContext from "@/hooks/useCarrinhoContext";
 
 function Carrinho() {
-  const { carrinho } = useCarrinhoContext();
+  const { carrinho, setCarrinho } = useCarrinhoContext();
   let precoProdutosTotal = 0;
   let frete = 5;
 
@@ -69,7 +69,7 @@ function Carrinho() {
             </PrecoTextoTotal>
           </PrecoContainer>
           <BotaoContainer>
-            <Botao>Fazer pedido</Botao>
+            <Botao onClick={() => setCarrinho([])}>Fazer pedido</Botao>
           </BotaoContainer>
         </InfosContainerInterno>
       </InfosContainer>
